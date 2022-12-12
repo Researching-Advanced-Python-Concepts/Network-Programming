@@ -24,8 +24,9 @@ def extract(proxy):
             print(r.json())
     except Exception as err:
         print()
+        print(proxy)
         print(err)
-        print(err.__dir__())
+        # print(err.__dir__())
     return proxy
 
 # extract(proxylist[0])
